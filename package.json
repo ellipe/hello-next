@@ -1,0 +1,23 @@
+{
+  "name": "hello-next",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server.js",
+    "build": "next build",
+    "prod": "pm2 start pm2_config.json --env production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "isomorphic-unfetch": "^2.0.0",
+    "next": "^6.0.2",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "unfetch": "^3.0.0"
+  }
+}
