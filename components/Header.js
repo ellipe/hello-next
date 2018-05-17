@@ -1,19 +1,30 @@
 import Link from 'next/link';
 
-const style = {
-    marginRight: 15
+
+const containerStyle = {
+    display : 'flex',
+    flexDirection: 'row',
+    flexWrap: 'wrap'
+};
+
+const linkStyle = {
+    marginRight: 20
 };
 
 const Header = () => (
-    <div>
+    <div style={containerStyle}>
         <Link href='/'>
-            <a style={style}>Home</a>
+            <a style={linkStyle}>Home</a>
         </Link>
         <Link href='/about'>
-            <a style={style}>About</a>
+            <a style={linkStyle}>About</a>
+        </Link>
+        <Link href='/login'>
+            <a style={linkStyle}>Login</a>
         </Link>
     </div>
 );
+
 
 
 export default Header;

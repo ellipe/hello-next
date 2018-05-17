@@ -3,7 +3,7 @@
         {
             "name": "batman",
             "script": "./server.js",
-            "watch": false,
+            "watch": true,
             "exec_mode": "cluster",
             "instances": "2",
             "env_production": {

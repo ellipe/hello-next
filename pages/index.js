@@ -1,10 +1,10 @@
 import Layout from '../components/Layout'
-import Link from 'next/link';
+import Link from 'next/link'
 import fetch from 'isomorphic-unfetch'
 
 const Index = (props) => (
     <Layout>
-        <h1>Batman TV Shows</h1>
+        <h1>TV Shows</h1>
         <ul>
             {props.shows.map(({ show }) => (
                 <li key={show.id}>

@@ -1,14 +1,19 @@
 import Header from './Header';
+import Divisor from './Divisor';
 
-const style = {
+const containerStyle = {
+    display: 'flex',
+    flexDirection: 'column',
     margin: 20,
     padding: 20,
-    border: '1px solid #DDD'
+    border: '1px solid #DDD',
+    background: '#EEE'
 };
 
 const Layout = (props) => (
-    <div style={style}>
+    <div style={containerStyle}>
         <Header />
+        <Divisor />
         {props.children}
     </div>
 );
